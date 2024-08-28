@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentorship Program</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo equal">Mentorship<span>Pro</span></h1>
+      <h5 class="rakshit equal">By Rakshit Jain</h5>
+      <nav>
+        <div class="menu-icon" id="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#mentors">Mentors</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2>Your Path to Success</h2>
+        <p>Join our IIT JEE & Neet mentorship program for just ₹99/month.</p>
+        <a
+          href="#"
+          target="_blank"
+          class="btn"
+          >Visit our YouTube Channel</a
+        >
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <h2 class="section-title">Pricing</h2>
+      <div class="pricing-table">
+        <div class="price-box">
+          <h3>Monthly Plan</h3>
+          <p class="price">₹99/month</p>
+          <button class="btn">Subscribe Now</button>
+        </div>
+        <div class="price-box">
+          <h3>Yearly Plan</h3>
+          <p class="price">₹999/year</p>
+          <button class="btn">Subscribe Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="mentors" class="section">
+      <h2 class="section-title">Our Mentors</h2>
+      <div class="mentor-list">
+        <div class="mentor">
+          <h3>Rakshit</h3>
+          <p>Physics Expert</p>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+        <div class="mentor">
+          <h3>Nikhil</h3>
+          <p>Chemistry Expert</p>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+        <div class="mentor">
+          <h3>Sujal</h3>
+          <p>Maths Expert</p>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+        <!-- Add more mentors as needed -->
+      </div>
+    </section>
+
+    <section id="notes" class="section">
+      <h2 class="section-title">Notes Section</h2>
+      <div class="notes-list">
+        <div class="note">
+          <h3>Physics</h3>
+          <p>Detailed notes of physics.</p>
+          <a href="note-link" target="_blank" class="btn">Download</a>
+        </div>
+        <div class="note">
+          <h3>Chemistry</h3>
+          <p>Detailed notes of chemistry.</p>
+          <a href="note-link" target="_blank" class="btn">Download</a>
+        </div>
+        <div class="note">
+          <h3>Maths</h3>
+          <p>Detailed notes of maths.</p>
+          <a href="note-link" target="_blank" class="btn">Download</a>
+        </div>
+        <!-- Add more notes as needed -->
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Us</h2>
+      <p>Get in touch with our mentors for personalized guidance.</p>
+      <form action="submit-form" name="myForm" method="POST">
+        <input type="text" name="fname" placeholder="Your Name" required>
+        <input type="email" name="femail" placeholder="Your Email" required
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 MentorshipPro. All Rights Reserved.</p>
+      <p>
+        Follow us on
+        <a href="#" target="_blank"
+          >YouTube</a>
+      </p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("menu-icon")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+          document.getElementById("menu").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
